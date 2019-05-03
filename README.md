@@ -21,5 +21,5 @@ Different ways of creating more maintainable Xaml code.
 
 ## Status :watch:
 
-[See my Kanban Work Board](https://github.com/users/haavamoa/projects/1) 
+[See my Kanban Work Board](https://github.com/haavamoa/xaml-code-experiences/projects/1) 
 
