@@ -19,7 +19,7 @@ Resources (converters etc...), utilities or helpers if you will.
 
 Different ways of creating more maintainable Xaml code.
 
-### Todo:
+### Todo: :watch:
 create code:
 architecture -> naming -> feature vs mvvm naming
 resources -> converters -> using markupextension to get better xaml code and to use properties
