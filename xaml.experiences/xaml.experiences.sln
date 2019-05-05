@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "markupextension", "resource
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "observingobjects", "resources\observingobjects\observingobjects.csproj", "{EE9855BC-E997-4378-9BB2-7FB2056BF256}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logicalexpressionconverter", "resources\converters\logicalexpressionconverter\logicalexpressionconverter.csproj", "{8559C7E7-0C95-4DC1-8BFF-0C0A2CB323B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E0FE406B-F9AF-4386-9643-58E563F52196} = {FFDB5EC8-E184-48CE-823D-F380D30CC7F8}
 		{EE9855BC-E997-4378-9BB2-7FB2056BF256} = {FFDB5EC8-E184-48CE-823D-F380D30CC7F8}
+		{8559C7E7-0C95-4DC1-8BFF-0C0A2CB323B7} = {FFDB5EC8-E184-48CE-823D-F380D30CC7F8}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E0FE406B-F9AF-4386-9643-58E563F52196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -28,5 +31,9 @@ Global
 		{EE9855BC-E997-4378-9BB2-7FB2056BF256}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE9855BC-E997-4378-9BB2-7FB2056BF256}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE9855BC-E997-4378-9BB2-7FB2056BF256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8559C7E7-0C95-4DC1-8BFF-0C0A2CB323B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8559C7E7-0C95-4DC1-8BFF-0C0A2CB323B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8559C7E7-0C95-4DC1-8BFF-0C0A2CB323B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8559C7E7-0C95-4DC1-8BFF-0C0A2CB323B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

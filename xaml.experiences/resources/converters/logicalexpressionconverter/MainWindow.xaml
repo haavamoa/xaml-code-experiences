@@ -1,0 +1,44 @@
+﻿<Window x:Class="logicalexpressionconverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:logicalexpressionconverter"
+        xmlns:ViewModels="clr-namespace:logicalexpressionconverter.ViewModels"
+        xmlns:Converters="clr-namespace:logicalexpressionconverter.Resources.Converters"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="350"
+        Width="525"
+        d:DataContext="{d:DesignInstance ViewModels:MainViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!-- Will change the second condition -->
+        <ToggleButton Grid.Row="0"
+                      Height="50"
+                      Content="Change first condition"
+                      IsChecked="{Binding FirstCondition}" />
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal">
+            <Label Content="First Condition :" /> <TextBlock Text="{Binding FirstCondition}" />
+        </StackPanel>
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal">
+            <Label Content="Second Condition :" /> <TextBlock Text="{Binding SecondCondition}" />
+        </StackPanel>
+        
+        <TextBlock Grid.Row="3" Text="This will show if both first and second condition is true" >
+            <TextBlock.Visibility>
+                <MultiBinding Converter="{Converters:LogicalExpressionConverter LogicalGate=And, ReturnType=Visibility}">
+                    <Binding Path="FirstCondition"/>
+                    <Binding Path="SecondCondition"/>
+                </MultiBinding>
+            </TextBlock.Visibility>
+        </TextBlock>
+    </Grid>
+</Window>
