@@ -1,4 +1,5 @@
-﻿using markupextension.ViewModels;
+﻿using System;
+using markupextension.ViewModels;
 
 namespace markupextension
 {
