@@ -11,16 +11,16 @@ The idea is that I want to use this repository as a lookup when facing different
 
 Architectural Xaml examples.
 * Naming
-    * [ViewModel naming convention](xaml.experiences/architecture/naming/viewmodelbased/README.md)
+    * [ViewModel naming convention](xaml.experiences/architecture/naming/viewmodelbased)
 
 ### Resources :hammer:
 
 Resources (converters etc...), utilities or helpers if you will.
 * Converters
-    * [LogicalExpressionConverter](xaml.experiences/resources/converters/logicalexpressionconverter/Readme.md)
-    * [Using `MarkupExtension`](xaml.experiences/resources/converters/markupextension/README.md)
+    * [LogicalExpressionConverter](xaml.experiences/resources/converters/logicalexpressionconverter)
+    * [Using `MarkupExtension`](xaml.experiences/resources/converters/markupextension)
 * Helpers
-    * [Observing objects](xaml.experiences/resources/helpers/observingobjects/README.md)
+    * [Observing objects](xaml.experiences/resources/helpers/observingobjects)
 
 ### Refactoring :wrench:
 
