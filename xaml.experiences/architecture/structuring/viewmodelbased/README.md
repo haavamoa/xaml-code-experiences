@@ -1,4 +1,4 @@
-# View - ViewModel naming convention
+# View - ViewModel structure
 This a convention where you create folders / namespaces for your views and view models. This approach are most 
 suitable for smaller projects that has a limited feature-set.
 

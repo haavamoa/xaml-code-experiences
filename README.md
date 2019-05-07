@@ -10,9 +10,9 @@ The idea is that I want to use this repository as a lookup when facing different
 ### Architecture :office:
 
 Architectural Xaml examples.
-* Naming
-    * [ViewModel naming convention](xaml.experiences/architecture/naming/viewmodelbased)
-    * [Feature naming convention](xaml.experiences/architecture/naming/featurebased)
+* structuring your code
+    * [ViewModel structure](xaml.experiences/architecture/naming/viewmodelbased)
+    * [Feature structure](xaml.experiences/architecture/naming/featurebased)
 
 ### Resources :hammer:
 
