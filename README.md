@@ -12,6 +12,7 @@ The idea is that I want to use this repository as a lookup when facing different
 Architectural Xaml examples.
 * Naming
     * [ViewModel naming convention](xaml.experiences/architecture/naming/viewmodelbased)
+    * [Feature naming convention](xaml.experiences/architecture/naming/featurebased)
 
 ### Resources :hammer:
 

@@ -1,0 +1,9 @@
+﻿<Application x:Class="featurebased.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:featurebased"
+             StartupUri="MainView.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

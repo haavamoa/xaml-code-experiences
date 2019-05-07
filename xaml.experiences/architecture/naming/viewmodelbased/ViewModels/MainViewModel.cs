@@ -2,12 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using observingobjects;
-using viewmodelbased.Models;
 using viewmodelbased.Services;
 
 namespace viewmodelbased.ViewModels
 {
-    public class MainViewModel : BaseViewModel
+    internal class MainViewModel : BaseViewModel
     {
         private List<FriendViewModel> m_friends;
         private IFriendService m_friendService;

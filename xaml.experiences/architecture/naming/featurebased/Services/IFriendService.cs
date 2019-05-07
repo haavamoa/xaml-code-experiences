@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using viewmodelbased.DataModels;
+using featurebased.DataModels;
 
-namespace viewmodelbased.Services
+namespace featurebased.Services
 {
     internal interface IFriendService
     {

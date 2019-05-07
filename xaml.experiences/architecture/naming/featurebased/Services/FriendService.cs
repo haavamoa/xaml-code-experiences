@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using viewmodelbased.DataModels;
+using featurebased.DataModels;
 
-namespace viewmodelbased.Services
+namespace featurebased.Services
 {
     internal class FriendService : IFriendService
     {
@@ -10,11 +10,11 @@ namespace viewmodelbased.Services
         {
             var friends = new List<Friend>()
             {
-                new Friend("Tom"),
-                new Friend("Henry"),
-                new Friend("Kimberly"),
-                new Friend("Sean"),
-                new Friend("Sarah"),
+                new Friend("Tom", "Hagen", 23),
+                new Friend("Henry", "McFlow", 52),
+                new Friend("Kimberly", "Dane", 39),
+                new Friend("Sean", "Austin",19),
+                new Friend("Sarah", "Parker", 33),
                 
             };
             return Task.FromResult(friends);

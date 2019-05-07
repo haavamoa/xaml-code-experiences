@@ -1,6 +1,6 @@
-namespace viewmodelbased.Models
+namespace viewmodelbased.DataModels
 {
-    public class Friend
+    internal class Friend
     {
         public Friend(string name)
         {

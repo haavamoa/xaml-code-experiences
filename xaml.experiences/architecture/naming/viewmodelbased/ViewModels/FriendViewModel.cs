@@ -1,8 +1,8 @@
-using viewmodelbased.Models;
+using viewmodelbased.DataModels;
 
 namespace viewmodelbased.ViewModels
 {
-    public class FriendViewModel
+    internal class FriendViewModel
     {
         private Friend m_friend;
 
