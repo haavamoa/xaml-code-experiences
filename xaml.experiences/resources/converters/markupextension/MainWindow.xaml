@@ -11,6 +11,10 @@
         Height="350"
         Width="525"
         d:DataContext="{d:DesignInstance ViewModels:MainViewModel}">
+    <!-- The bad way -->
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -21,11 +25,12 @@
                       Height="50"
                       Content="Press me!"
                       IsChecked="{Binding ShouldDisplay}" />
+        <!-- The bad way to reference the converter -->
         <TextBlock Grid.Row="1"
                    Text="I am visible!"
-                   Visibility="{Binding ShouldDisplay, Converter={Converters:BoolToVisibilityConverter}}" />
+                   Visibility="{Binding ShouldDisplay, Converter={StaticResource booleanToVisibilityConverter}}" />
         <TextBlock Grid.Row="1"
                    Text="I am visible! But has a inverted visibility"
                    Visibility="{Binding ShouldDisplay, Converter={Converters:BoolToVisibilityConverter Inverted=True}}" />
     </Grid>
-</Window>
+</Window.Resources>
