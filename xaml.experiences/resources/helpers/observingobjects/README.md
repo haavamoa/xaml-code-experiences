@@ -35,4 +35,5 @@ Code explanation:
 - If the value has been changed, it will notify property changed. That way, the UI will update its value.
 
 > The code for ``FooBarViewModel`` can be found [here](FooBarViewModel.cs).
+
 > The code for ``BaseViewModel`` can be found [here](BaseViewModel.cs)
