@@ -33,4 +33,4 @@
                    Text="I am visible! But has a inverted visibility"
                    Visibility="{Binding ShouldDisplay, Converter={Converters:BoolToVisibilityConverter Inverted=True}}" />
     </Grid>
-</Window.Resources>
+</Window>

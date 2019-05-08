@@ -51,6 +51,8 @@
             <SubType>Designer</SubType>
         </ApplicationDefinition>
         <Compile Include="Resources\Converters\LogicalExpressionConverter.cs" />
+        <Compile Include="Resources\Converters\LogicalGate.cs" />
+        <Compile Include="Resources\Converters\ReturnType.cs" />
         <Compile Include="ViewModels\MainViewModel.cs" />
         <Page Include="MainWindow.xaml">
             <Generator>MSBuild:Compile</Generator>

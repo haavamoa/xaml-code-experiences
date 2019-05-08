@@ -105,20 +105,4 @@ namespace logicalexpressionconverter.Resources.Converters
             return this;
         }
     }
-    
-        public enum LogicalGate
-        {
-            Undefined, //Default, non-existing logical expression
-            And,
-            Nand,
-            Or,
-            Nor
-        }
-        
-        public enum ReturnType
-        {
-            Undefined, //Default, non-existing return type
-            Visibility,
-            Boolean,
-        }
 }
