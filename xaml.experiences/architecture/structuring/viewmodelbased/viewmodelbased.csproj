@@ -85,17 +85,17 @@
       <Content Include="README.md" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\..\..\resources\observingobjects\observingobjects.csproj">
-        <Project>{ee9855bc-e997-4378-9bb2-7fb2056bf256}</Project>
-        <Name>observingobjects</Name>
-      </ProjectReference>
-    </ItemGroup>
-    <ItemGroup>
       <Page Include="Views\FriendView.xaml" />
       <Page Include="Views\MainView.xaml">
         <Generator>MSBuild:Compile</Generator>
         <SubType>Designer</SubType>
       </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\resources\helpers\observingobjects\observingobjects.csproj">
+        <Project>{ee9855bc-e997-4378-9bb2-7fb2056bf256}</Project>
+        <Name>observingobjects</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

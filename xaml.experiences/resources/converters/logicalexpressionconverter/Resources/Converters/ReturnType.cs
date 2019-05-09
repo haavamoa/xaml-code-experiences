@@ -4,6 +4,7 @@ namespace logicalexpressionconverter.Resources.Converters
     {
         Undefined, //Default, non-existing return type
         Visibility,
+        VisibilityHidden,
         Boolean,
     }
 }

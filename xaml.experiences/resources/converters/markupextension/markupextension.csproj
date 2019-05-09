@@ -88,7 +88,7 @@
         <Project>{291086ac-9f89-42b2-a1fc-07501c8d2de2}</Project>
         <Name>commands</Name>
       </ProjectReference>
-      <ProjectReference Include="..\..\observingobjects\observingobjects.csproj">
+      <ProjectReference Include="..\..\helpers\observingobjects\observingobjects.csproj">
         <Project>{ee9855bc-e997-4378-9bb2-7fb2056bf256}</Project>
         <Name>observingobjects</Name>
       </ProjectReference>

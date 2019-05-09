@@ -85,13 +85,13 @@
         <None Include="App.config" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\..\observingobjects\observingobjects.csproj">
+      <Content Include="Readme.md" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\helpers\observingobjects\observingobjects.csproj">
         <Project>{ee9855bc-e997-4378-9bb2-7fb2056bf256}</Project>
         <Name>observingobjects</Name>
       </ProjectReference>
-    </ItemGroup>
-    <ItemGroup>
-      <Content Include="Readme.md" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

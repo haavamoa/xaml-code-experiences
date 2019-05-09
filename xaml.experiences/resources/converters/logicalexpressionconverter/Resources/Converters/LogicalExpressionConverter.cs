@@ -26,6 +26,8 @@ namespace logicalexpressionconverter.Resources.Converters
                 {
                     case ReturnType.Visibility:
                         return Visibility.Collapsed;
+                    case ReturnType.VisibilityHidden:
+                        return Visibility.Hidden;
                     case ReturnType.Boolean:
                         return false;
                     case ReturnType.Undefined:
@@ -41,6 +43,8 @@ namespace logicalexpressionconverter.Resources.Converters
                     {
                         case ReturnType.Visibility:
                             return Visibility.Collapsed;
+                        case ReturnType.VisibilityHidden:
+                            return Visibility.Hidden;
                         case ReturnType.Boolean:
                             return false;
                         case ReturnType.Undefined:
@@ -81,6 +85,8 @@ namespace logicalexpressionconverter.Resources.Converters
                         return logcalExpression;
                     case ReturnType.Visibility:
                         return logcalExpression ? Visibility.Visible : Visibility.Collapsed;
+                    case ReturnType.VisibilityHidden:
+                        return logcalExpression ? Visibility.Visible : Visibility.Hidden;
                     case ReturnType.Undefined:
                         break;
                     default:
