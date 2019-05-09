@@ -70,7 +70,7 @@ In most cases I rarely switch implementations of a abstraction. But in the rare 
  that I chose this approach.
  
  ### How do we inject?
-By using a `DI` container. And there is loads of them! [Here is a couple of then](https://www.hanselman.com/blog/ListOfNETDependencyInjectionContainersIOC.aspx). 
+By using a `DI` container. [And there is loads of them!](https://www.hanselman.com/blog/ListOfNETDependencyInjectionContainersIOC.aspx). 
 
 Now, for this project I have chosen [LightInject](https://www.lightinject.net/). This is because this is the one I am
  most familiar with.
