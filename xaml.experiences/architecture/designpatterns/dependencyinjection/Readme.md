@@ -89,14 +89,11 @@ Now, for this project I have chosen [LightInject](https://www.lightinject.net/).
              container.GetInstance<MainWindow>().Show();
          }
  ```
- 
- Code explanation:
- 
- Calling `base.OnStartup(e)` because we have to. Creates a new `LightInject` container, and turns of property 
- injection (because this can be troublesome when working with Wpf). I register a `CompositionRoot` in the container, 
- this class is where I set up the dependencies for the project. Next I resolve `MainWindow` from the container and 
- runs `Show()`. Resolving means that it has used the container to fetch a `MainWindow` instance with its dependencies
-  injected into it.
+  * Calling `base.OnStartup(e)` because we have to. 
+  * Creates a new `LightInject` container, and turns of property injection (because this can be troublesome when working with Wpf). 
+  * Register a `CompositionRoot` in the container, this class is where I set up the dependencies for the project. 
+  * Next I resolve `MainWindow` from the container and run `Show()`. 
+  * Resolving means that it has used the container to fetch a `MainWindow` instance with its dependenciesinjected into it.
  
 * Create [`CompositionRoot`](CompositionRoot.cs) that implements `ICompositionRoot` from `LightInject`:
 ```c#
