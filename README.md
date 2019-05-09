@@ -31,3 +31,6 @@ Different ways of creating more maintainable Xaml code.
 
 [See my Kanban Work Board](https://github.com/haavamoa/xaml-code-experiences/projects/1) 
 
+## Contributions
+
+Contributions through Pull Requests and Issues are always welcome! ❤️ Feel free to report What kind of topics you would like me to add as well. 
