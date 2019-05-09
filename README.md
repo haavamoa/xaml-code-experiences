@@ -23,6 +23,8 @@ Resources (converters etc...), utilities or helpers if you will.
     * [Using `MarkupExtension`](xaml.experiences/resources/converters/markupextension)
     * [LogicalExpressionConverter](xaml.experiences/resources/converters/logicalexpressionconverter)
     * [NullToVisibilityConverter](xaml.experiences/resources/converters/nulltovisconverter)
+* Commands
+    * [DelegateCommand](xaml.experiences/resources/commands/delegatecommand)
 * Helpers
     * [Observing objects](xaml.experiences/resources/helpers/observingobjects)
 
