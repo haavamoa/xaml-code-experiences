@@ -96,6 +96,8 @@ Now, for this project I have chosen [LightInject](https://www.lightinject.net/).
  ```
  
 * Create [`CompositionRoot`](CompositionRoot.cs) that implements `ICompositionRoot` from `LightInject`:
+ * Register ``IFooViewModel``, ``IBarViewModel``, and `MainWindow`. The flow of the dependencies is: 
+``MainWindow`` wants `IFooViewModel` that wants `IBarViewModel`.
 ```c#
 public void Compose(IServiceRegistry serviceRegistry)
         {
@@ -104,12 +106,6 @@ public void Compose(IServiceRegistry serviceRegistry)
             serviceRegistry.Register<MainWindow>();
         }
 ```
-
-Code explanation:
-
-Register ``IFooViewModel``, ``IBarViewModel``, and `MainWindow`. The flow of the dependencies is: 
-``MainWindow`` wants `IFooViewModel` that wants `IBarViewModel`.
-
 So when resolving `MainWindow` , it will resolve a `IFooViewModel` that will inject a `IBarViewModel` into 
 `FooViewModel` and inject that `FooViewModel` into `MainWindow`.
 
