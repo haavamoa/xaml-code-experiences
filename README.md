@@ -32,6 +32,9 @@ Resources (converters etc...), utilities or helpers if you will.
 
 Different ways of creating more maintainable Xaml code.
 
+### Guides :page_with_curl:
+Full application guides. 
+
 ## Status :watch:
 
 [See my Kanban Work Board](https://github.com/haavamoa/xaml-code-experiences/projects/1) 
