@@ -81,10 +81,10 @@ Now, for this project I have chosen [LightInject](https://www.lightinject.net/).
  * Removed `StartupUrl="MainWindow.xaml` from [`App.xaml`](App.xaml).
  * Override `void OnStartup(StartupEventArgs e)` in [`App.xaml.cs`](App.xaml.cs) with the following:
    * Calling `base.OnStartup(e)` because we have to. 
-  * Creates a new `LightInject` container, and turns of property injection (because this can be troublesome when working with Wpf). 
-  * Register a `CompositionRoot` in the container, this class is where I set up the dependencies for the project. 
-  * Next I resolve `MainWindow` from the container and run `Show()`. 
-  * Resolving means that it has used the container to fetch a `MainWindow` instance with its dependenciesinjected into it.
+   * Creates a new `LightInject` container, and turns of property injection (because this can be troublesome when working with Wpf). 
+   * Register a `CompositionRoot` in the container, this class is where I set up the dependencies for the project. 
+   * Next I resolve `MainWindow` from the container and run `Show()`. 
+   * Resolving means that it has used the container to fetch a `MainWindow` instance with its dependenciesinjected into it.
  ```c#
  protected override void OnStartup(StartupEventArgs e)
          {
