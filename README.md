@@ -38,11 +38,7 @@ Full application guides.
 ### Other source :couple:
 * [xaml-coding-guidelines](https://github.com/cmaneu/xaml-coding-guidelines) 
 * [WPF Productivity Playbook](https://www.pluralsight.com/courses/wpf-productivity-playbook) 
-* [DataBinding Memory Leaks](https://onewindowsdev.com/2016/09/22/a-memory-leak-may-occur-when-you-use-data-binding-in-windows-presentation-foundation/) 
 
-# Status :watch:
-
-[See my Kanban Work Board](https://github.com/haavamoa/xaml-code-experiences/projects/1) 
 
 ## Contributions
 
