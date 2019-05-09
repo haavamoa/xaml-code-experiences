@@ -96,7 +96,7 @@ Now, for this project I have chosen [LightInject](https://www.lightinject.net/).
  ```
  
 * Create [`CompositionRoot`](CompositionRoot.cs) that implements `ICompositionRoot` from `LightInject`:
- * Register ``IFooViewModel``, ``IBarViewModel``, and `MainWindow`. The flow of the dependencies is: 
+  * Register ``IFooViewModel``, ``IBarViewModel``, and `MainWindow`. The flow of the dependencies is: 
 ``MainWindow`` wants `IFooViewModel` that wants `IBarViewModel`.
 ```c#
 public void Compose(IServiceRegistry serviceRegistry)
