@@ -4,8 +4,7 @@ In order for the view to get notified about changes to the view model, the view 
 
 With a [``BaseViewModel``](BaseViewModel.cs) we can abstract this out and reuse it when creating new view models.
 
-A typical case when dealing with notification is changing a property. With this base view model you could do the 
-following:
+A typical case when dealing with notification is when changing a property. With this base view model you could do the following:
 
 ```csharp
 namespace observingobjects
