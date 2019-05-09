@@ -13,13 +13,16 @@ Architectural Xaml examples.
 * Structuring
     * [ViewModel structure](xaml.experiences/architecture/structuring/viewmodelbased)
     * [Feature structure](xaml.experiences/architecture/structuring/featurebased)
+* Design Patterns
+    * [Dependency Injection](xaml.experiences/architecture/designpatterns/dependencyinjection)
 
 ### Resources :hammer:
 
 Resources (converters etc...), utilities or helpers if you will.
 * Converters
-    * [LogicalExpressionConverter](xaml.experiences/resources/converters/logicalexpressionconverter)
     * [Using `MarkupExtension`](xaml.experiences/resources/converters/markupextension)
+    * [LogicalExpressionConverter](xaml.experiences/resources/converters/logicalexpressionconverter)
+    * [NullToVisibilityConverter](xaml.experiences/resources/converters/nulltovisconverter)
 * Helpers
     * [Observing objects](xaml.experiences/resources/helpers/observingobjects)
 
