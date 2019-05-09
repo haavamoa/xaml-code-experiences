@@ -33,4 +33,4 @@ Different ways of creating more maintainable Xaml code.
 
 ## Contributions
 
-Contributions through Pull Requests and Issues are always welcome! ❤️ Feel free to report What kind of topics you would like me to add as well. 
+Contributions through Pull Requests and Issues are always welcome! ❤️ Feel free to report what kind of topics you would like me to add as well. 
