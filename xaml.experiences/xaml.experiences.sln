@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dependencyinjection", "arch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nulltovisconverter", "resources\converters\nulltovisconverter\nulltovisconverter.csproj", "{0F217230-FB5A-4C77-B235-1C1B66E56F4E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "commands", "commands", "{98D76203-1FAF-4534-8F55-998230446EB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delegatecommand", "resources\commands\delegatecommand\delegatecommand.csproj", "{2DF90F55-65E7-474B-A259-9B5BEC0AE5FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +54,8 @@ Global
 		{7FEEF84B-1382-4D13-A338-0B6B431265F3} = {F098F4E0-6CFA-4D9D-9118-AB2A8D75D46A}
 		{7E00568B-36DF-4260-B888-C7A017F2672F} = {7FEEF84B-1382-4D13-A338-0B6B431265F3}
 		{0F217230-FB5A-4C77-B235-1C1B66E56F4E} = {89CB05DD-B5F6-4364-B067-A415DFA13998}
+		{98D76203-1FAF-4534-8F55-998230446EB6} = {FFDB5EC8-E184-48CE-823D-F380D30CC7F8}
+		{2DF90F55-65E7-474B-A259-9B5BEC0AE5FC} = {98D76203-1FAF-4534-8F55-998230446EB6}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E0FE406B-F9AF-4386-9643-58E563F52196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -80,5 +86,9 @@ Global
 		{0F217230-FB5A-4C77-B235-1C1B66E56F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F217230-FB5A-4C77-B235-1C1B66E56F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F217230-FB5A-4C77-B235-1C1B66E56F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DF90F55-65E7-474B-A259-9B5BEC0AE5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF90F55-65E7-474B-A259-9B5BEC0AE5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF90F55-65E7-474B-A259-9B5BEC0AE5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF90F55-65E7-474B-A259-9B5BEC0AE5FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
