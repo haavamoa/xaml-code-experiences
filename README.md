@@ -35,7 +35,11 @@ Different ways of creating more maintainable Xaml code.
 ### Guides :page_with_curl:
 Full application guides. 
 
-## Status :watch:
+### Other source :couple:
+* [xaml-coding-guidelines](https://github.com/cmaneu/xaml-coding-guidelines) 
+* [WPF Productivity Playbook](https://www.pluralsight.com/courses/wpf-productivity-playbook) 
+
+# Status :watch:
 
 [See my Kanban Work Board](https://github.com/haavamoa/xaml-code-experiences/projects/1) 
 
