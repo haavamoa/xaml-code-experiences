@@ -32,8 +32,14 @@ Resources (converters etc...), utilities or helpers if you will.
 
 Different ways of creating more maintainable Xaml code.
 
+### Tips and tricks :star2:
+Different tips and tricks
+* [Async loading data with non-blocking UI](xaml.experiences/tipsandtricks/nonblockingui)
+
 ### Guides :page_with_curl:
 Full application guides. 
+
+## Status :watch:
 
 ### Other source :couple:
 * [xaml-coding-guidelines](https://github.com/cmaneu/xaml-coding-guidelines) 
