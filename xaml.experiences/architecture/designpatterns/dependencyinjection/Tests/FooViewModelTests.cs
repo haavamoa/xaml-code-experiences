@@ -4,12 +4,12 @@ using Moq;
 
 namespace dependencyinjection.Tests
 {
-    public class FooBarViewModelTests
+    public class FooViewModelTests
     {
         private FooViewModel m_cut;
         private Mock<IBarViewModel> mocked_barViewModel;
 
-        public FooBarViewModelTests()
+        public FooViewModelTests()
         {
             mocked_barViewModel = new Mock<IBarViewModel>();
             m_cut = new FooViewModel(mocked_barViewModel.Object);
