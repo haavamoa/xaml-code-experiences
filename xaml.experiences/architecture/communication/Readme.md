@@ -10,3 +10,14 @@ One of the most important aspects for me is that the way they communicate should
  it can very fast become a circular dependency hell! Loosely coupled communication can be achieved in different ways.
 
 In this category I want to highlight the different ways I, together with my teams, have been doing it. 
+
+
+## Application flow in examples
+In each of the projects, this should be the purpose of the application:
+
+![applicationMock]
+
+[applicationMock]:applicationMock.png
+
+A simple master-detail view where changing the hair color of a friend should force another part of the application to
+ reevaluate how many friends that have black hair.  

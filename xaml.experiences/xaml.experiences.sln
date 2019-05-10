@@ -46,6 +46,8 @@ ProjectSection(SolutionItems) = preProject
 	architecture\communication\Readme.md = architecture\communication\Readme.md
 EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eventbased", "architecture\communication\eventbased\eventbased.csproj", "{3E2F5724-4907-4327-8B2D-7EDC7FF7C214}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,7 @@ Global
 		{2DF90F55-65E7-474B-A259-9B5BEC0AE5FC} = {98D76203-1FAF-4534-8F55-998230446EB6}
 		{0F372093-47F0-4ED0-96F4-6F223D48CD9E} = {7F8ED989-432B-44F6-BCCD-70749E67D1F2}
 		{C8555E7B-31FC-4D0E-AFB4-8DEC291357E2} = {F098F4E0-6CFA-4D9D-9118-AB2A8D75D46A}
+		{3E2F5724-4907-4327-8B2D-7EDC7FF7C214} = {C8555E7B-31FC-4D0E-AFB4-8DEC291357E2}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E0FE406B-F9AF-4386-9643-58E563F52196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -105,5 +108,9 @@ Global
 		{0F372093-47F0-4ED0-96F4-6F223D48CD9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F372093-47F0-4ED0-96F4-6F223D48CD9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F372093-47F0-4ED0-96F4-6F223D48CD9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2F5724-4907-4327-8B2D-7EDC7FF7C214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2F5724-4907-4327-8B2D-7EDC7FF7C214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2F5724-4907-4327-8B2D-7EDC7FF7C214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2F5724-4907-4327-8B2D-7EDC7FF7C214}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
