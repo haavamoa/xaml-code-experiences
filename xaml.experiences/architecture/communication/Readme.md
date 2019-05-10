@@ -6,7 +6,7 @@ working with others.
 A fairly large project can very fast turn into a big pile of spaghetti if one does not agree on a common way of doing
  it.
 
-One of the most important aspects for me is that they way they communicate should be loosely coupled. This is because
+One of the most important aspects for me is that the way they communicate should be loosely coupled. This is because
  it can very fast become a circular dependency hell! Loosely coupled communication can be achieved in different ways.
 
 In this category I want to highlight the different ways I, together with my teams, have been doing it. 
