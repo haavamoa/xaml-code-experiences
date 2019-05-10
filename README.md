@@ -13,6 +13,7 @@ The idea is that I want to use this repository as a lookup when facing different
     * [Feature structure](xaml.experiences/architecture/structuring/featurebased)
 * Design Patterns
     * [Dependency Injection](xaml.experiences/architecture/designpatterns/dependencyinjection)
+* [Communication](xaml.experiences/architecture/communication)
 
 ### Resources :hammer:
 * Converters
