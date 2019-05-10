@@ -1,6 +1,6 @@
 # Dependency Injection (DI)
 The actual design pattern is called ``Inversion of Control (IOC)`` and can be implemented in different ways (events, 
-delegate etc.). ``DI`` is a implementation of `IOC` and is working by constructor injection, property injection or method injection.
+delegate etc.). ``DI`` is an implementation of `IOC` and is working by constructor injection, property injection or method injection.
 
 ### But what is injecting dependencies?
 The main goal of ``IOC`` and `DI` is to remove dependencies of classes, this makes the code decoupled and much more maintainable. 
@@ -46,23 +46,23 @@ public class FooViewModel : BaseViewModel, IFooViewModel
     }
 ````
 
-The biggest change here is that we have created a abstraction for `BarViewModel` by adding a interface called 
+The biggest change here is that we have created an abstraction for `BarViewModel` by adding an interface called 
 [`IBarViewModel`](ViewModels/DependencyInjection/Interfaces/IBarViewModel.cs).
 
 ### But what do we achieve?
 First of all, working with abstractions rather than implementations is a winning strategy. 
 
-You have a application where the user should choose what kind of persistence (Database, local JSON file, In memory) it 
+You have an application where the user should choose what kind of persistence (Database, local JSON file, In memory) it 
 would like to use. You could create some kind of configuration that the user can fiddle with, and you could design your 
 application to read the configuration and inject the correct type of implementation down your application. You would
-only need to create a interface called `IPersistence` or more popular: `IRepository`. Now you have to create a 
-class pr persistence choice and implement that interface.
+only need to create an interface called `IPersistence` or more popular: `IRepository`. Now you have to create a 
+class for each persistence choice and implement that interface.
 
 This kind of architecture leads to loosely coupled code, that can in fact be much easier to test.
 
 My rule of thumb is; whenever I `new` something up I ask myself if I can create a abstraction and pass it into the constructor instead. Because I know that this will serve much better when I move onto testing. 
 
-In most cases I rarely switch implementations of a abstraction. But in the rare cases where I have to, I thank myself that I chose this approach.
+In most cases I rarely switch implementations of an abstraction. But in the rare cases where I have to, I thank myself that I chose this approach.
  
  ### How do we inject?
 By using a `DI` container. [And there is loads of them!](https://www.hanselman.com/blog/ListOfNETDependencyInjectionContainersIOC.aspx). 
@@ -71,14 +71,14 @@ Now, for this project I have chosen [LightInject](https://www.lightinject.net/).
  most familiar with.
  
 #### How to use `LightInject` in Wpf :
- * Added `IFooViewModel` to the constructor of `MainWindow` and set the `DataContext` to the instance of  `IFooViewModel`.
- * Removed `StartupUrl="MainWindow.xaml` from [`App.xaml`](App.xaml).
+ * Add `IFooViewModel` to the constructor of `MainWindow` and set the `DataContext` to the instance of  `IFooViewModel`.
+ * Remove `StartupUrl="MainWindow.xaml` from [`App.xaml`](App.xaml).
  * Override `void OnStartup(StartupEventArgs e)` in [`App.xaml.cs`](App.xaml.cs) with the following:
-   * Calling `base.OnStartup(e)` because we have to. 
-   * Creates a new `LightInject` container, and turns of property injection (because this can be troublesome when working with Wpf). 
+   * Call `base.OnStartup(e)` because we have to. 
+   * Create a new `LightInject` container, and turns of property injection (because this can be troublesome when working with Wpf). 
    * Register a `CompositionRoot` in the container, this class is where I set up the dependencies for the project. 
    * Next I resolve `MainWindow` from the container and run `Show()`. 
-   * Resolving means that it has used the container to fetch a `MainWindow` instance with its dependenciesinjected into it.
+   * Resolving means that it has used the container to fetch a `MainWindow` instance with its dependencies injected into it.
  ```c#
  protected override void OnStartup(StartupEventArgs e)
          {
@@ -100,7 +100,7 @@ public void Compose(IServiceRegistry serviceRegistry)
             serviceRegistry.Register<MainWindow>();
         }
 ```
-So when resolving `MainWindow` , it will resolve a `IFooViewModel` that will inject a `IBarViewModel` into 
+So when resolving `MainWindow` , it will resolve an `IFooViewModel` that will inject an `IBarViewModel` into 
 `FooViewModel` and inject that `FooViewModel` into `MainWindow`.
 
 
@@ -113,7 +113,7 @@ You can also use frameworks like ``Moq`` to create mocks / stubs for your depend
 
 I have used ``Moq`` because this is what I am familiar with. 
 
-I wont go into much details about test driven development, but I have added a [`FooViewModelTests`](Tests/FooViewModelTests.cs) class.
+I won't go into much details about test driven development, but I have added a [`FooViewModelTests`](Tests/FooViewModelTests.cs) class.
 This test class is using DI to its favor by creating a mock / stubbed version of `IBarViewModel`. That way I can test `FooViewModel` in total isolation. With Moq it can verify that methods on `IBarViewModel` has been invoked and setup what methods or properties `IBarViewModel` should return.
  
  
