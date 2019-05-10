@@ -20,4 +20,6 @@ In each of the projects, this should be the purpose of the application:
 [applicationMock]:applicationMock.png
 
 A simple master-detail view where changing the hair color of a friend should force another part of the application to
- reevaluate how many friends that have black hair.  
+ reevaluate how many friends that have black hair.
+ 
+ [This](applicationskeleton/) is the code skeleton for the projects.  

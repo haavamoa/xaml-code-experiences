@@ -42,7 +42,7 @@ namespace eventbased.Properties
                 if ((resourceMan == null))
                 {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager(
-                        "eventbased.Properties.Resources",
+                        "applicationskeleton.Properties.Resources",
                         typeof(Resources).Assembly);
                     resourceMan = temp;
                 }

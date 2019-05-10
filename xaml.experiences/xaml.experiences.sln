@@ -46,7 +46,7 @@ ProjectSection(SolutionItems) = preProject
 	architecture\communication\Readme.md = architecture\communication\Readme.md
 EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eventbased", "architecture\communication\eventbased\eventbased.csproj", "{3E2F5724-4907-4327-8B2D-7EDC7FF7C214}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "applicationskeleton", "architecture\communication\applicationskeleton\applicationskeleton.csproj", "{3E2F5724-4907-4327-8B2D-7EDC7FF7C214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
