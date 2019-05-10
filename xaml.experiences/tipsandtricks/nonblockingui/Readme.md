@@ -39,11 +39,14 @@ public partial class MainWindow
         {
             Friends.Add(new FriendViewModel(fetchedFriend.FirstName, fetchedFriend.LastName));
         }
-        IsBusy = false;
     }
     catch (Exception e)
     {
         //Try to resolve the issue and fix it, log it and/or show it.
+    }
+    finally
+    {
+        IsBusy = false;
     }
 }
 ```
