@@ -39,8 +39,6 @@ Different tips and tricks
 ### Guides :page_with_curl:
 Full application guides. 
 
-## Status :watch:
-
 ### Other source :couple:
 * [xaml-coding-guidelines](https://github.com/cmaneu/xaml-coding-guidelines) 
 * [WPF Productivity Playbook](https://www.pluralsight.com/courses/wpf-productivity-playbook) 
