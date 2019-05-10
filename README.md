@@ -8,8 +8,6 @@ The idea is that I want to use this repository as a lookup when facing different
 ## Categories
 
 ### Architecture :office:
-
-Architectural Xaml examples.
 * Structuring
     * [ViewModel structure](xaml.experiences/architecture/structuring/viewmodelbased)
     * [Feature structure](xaml.experiences/architecture/structuring/featurebased)
@@ -17,8 +15,6 @@ Architectural Xaml examples.
     * [Dependency Injection](xaml.experiences/architecture/designpatterns/dependencyinjection)
 
 ### Resources :hammer:
-
-Resources (converters etc...), utilities or helpers if you will.
 * Converters
     * [Using `MarkupExtension`](xaml.experiences/resources/converters/markupextension)
     * [LogicalExpressionConverter](xaml.experiences/resources/converters/logicalexpressionconverter)
@@ -29,15 +25,13 @@ Resources (converters etc...), utilities or helpers if you will.
     * [Observing objects](xaml.experiences/resources/helpers/observingobjects)
 
 ### Refactoring :wrench:
-
-Different ways of creating more maintainable Xaml code.
+> Coming...
 
 ### Tips and tricks :star2:
-Different tips and tricks
 * [Async loading data with non-blocking UI](xaml.experiences/tipsandtricks/nonblockingui)
 
 ### Guides :page_with_curl:
-Full application guides. 
+> Coming...
 
 ### Other source :couple:
 * [xaml-coding-guidelines](https://github.com/cmaneu/xaml-coding-guidelines) 
