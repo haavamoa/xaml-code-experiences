@@ -113,9 +113,8 @@ You can also use frameworks like ``Moq`` to create mocks / stubs for your depend
 
 I have used ``Moq`` because this is what I am familiar with. 
 
-I wont go into much details about test driven development, but I have added a [`FooBarViewModelTests`](Tests/FooBarViewModelTests.cs) class.
-This test class is using DI to its favor by creating a mock / stubbed version of `IBarViewModel`. That way it can test `FooBarViewModel` in total isolation.
-With Moq it can verify that methods on `IBarViewModel` has been invoked and setup what methods or properties `IBarViewModel` should return.
+I wont go into much details about test driven development, but I have added a [`FooViewModelTests`](Tests/FooViewModelTests.cs) class.
+This test class is using DI to its favor by creating a mock / stubbed version of `IBarViewModel`. That way I can test `FooViewModel` in total isolation. With Moq it can verify that methods on `IBarViewModel` has been invoked and setup what methods or properties `IBarViewModel` should return.
  
  
  
