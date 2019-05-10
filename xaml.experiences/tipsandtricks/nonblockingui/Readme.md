@@ -48,7 +48,7 @@ public partial class MainWindow
 }
 ```
 
-Here is the result: (weird artifacts appeared)
+Here is the result:
 
 ![result]
 
