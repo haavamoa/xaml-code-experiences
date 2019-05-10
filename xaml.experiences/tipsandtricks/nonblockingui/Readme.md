@@ -29,15 +29,22 @@ public partial class MainWindow
 [``Initialize``](ViewModels/MainViewModel.cs) will do mark the view model as busy before it goes to a service and fetches friends 
 (this service could be a REST service that would take some time). When fetching is completed it will mark the view model as non busy.
 ```c#
-public async Task Initialize()
+ public async Task Initialize()
 {
-    IsBusy = true;
-    var fetchedFriends = await m_friendService.Get();
-    foreach (var fetchedFriend in fetchedFriends)
+    try
     {
-        Friends.Add(new FriendViewModel(fetchedFriend.FirstName, fetchedFriend.LastName));
+        IsBusy = true;
+        var fetchedFriends = await m_friendService.Get();
+        foreach (var fetchedFriend in fetchedFriends)
+        {
+            Friends.Add(new FriendViewModel(fetchedFriend.FirstName, fetchedFriend.LastName));
+        }
+        IsBusy = false;
     }
-    IsBusy = false;
+    catch (Exception e)
+    {
+        //Try to resolve the issue and fix it, log it and/or show it.
+    }
 }
 ```
 
