@@ -46,7 +46,7 @@ public async Task Initialize()
 }
 ```
 
-Here is the result: (weird artifacts appeared)
+Here is the result:
 
 ![result]
 
