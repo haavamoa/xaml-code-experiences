@@ -80,7 +80,7 @@
             <SubType>Designer</SubType>
         </ApplicationDefinition>
         <Compile Include="CompositionRoot.cs" />
-        <Compile Include="Tests\FooBarViewModelTests.cs" />
+        <Compile Include="Tests\FooViewModelTests.cs" />
         <Compile Include="ViewModels\DependencyInjection\BarViewModel.cs" />
         <Compile Include="ViewModels\DependencyInjection\FooViewModel.cs" />
         <Compile Include="ViewModels\DependencyInjection\Interfaces\IBarViewModel.cs" />
