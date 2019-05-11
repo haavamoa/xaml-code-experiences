@@ -19,5 +19,11 @@ In each of the projects, this should be the purpose of the application:
 
 A simple master-detail view where changing the hair color of a friend should force another part of the application to
  reevaluate how many friends that have black hair.
+
+Here is a demonstration of the application without communication in place:
  
- [This](applicationskeleton/) is the code skeleton for the projects.  
+ ![demonstration]
+ 
+ [demonstration]:applicationskeleton/gifs/demonstration.gif 
+
+[This](applicationskeleton/) is the code skeleton for the projects.  
