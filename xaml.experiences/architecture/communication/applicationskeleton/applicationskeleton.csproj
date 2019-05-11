@@ -51,13 +51,18 @@
             <SubType>Designer</SubType>
         </ApplicationDefinition>
         <Compile Include="DataModel\Friend.cs" />
+        <Compile Include="DataModel\HairColor.cs" />
         <Compile Include="FriendDetail\FriendViewModel.cs" />
+        <Compile Include="FriendDetail\IFriendViewModel.cs" />
         <Compile Include="FriendsList\IFriendsViewModel.cs" />
         <Compile Include="HairColorCounting\HairCountingViewModel.cs" />
         <Compile Include="HairColorCounting\IHairCountingViewModel.cs" />
         <Compile Include="MainViewModel.cs" />
         <Compile Include="Services\FriendsService.cs" />
         <Compile Include="Services\IFriendsService.cs" />
+        <Page Include="FriendDetail\FriendDetailView.xaml" />
+        <Page Include="FriendsList\FriendsListView.xaml" />
+        <Page Include="HairColorCounting\HairColorCountingView.xaml" />
         <Page Include="MainWindow.xaml">
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
@@ -93,6 +98,22 @@
       <Content Include="Readme.md" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\..\..\resources\converters\invertedvisconverter\invertedvisconverter.csproj">
+        <Project>{5650b5da-d5f4-4a22-8fd8-224dee4926d1}</Project>
+        <Name>invertedvisconverter</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\..\..\resources\converters\markupextension\markupextension.csproj">
+        <Project>{e0fe406b-f9af-4386-9643-58e563f52196}</Project>
+        <Name>markupextension</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\..\..\resources\converters\nulltovisconverter\nulltovisconverter.csproj">
+        <Project>{0f217230-fb5a-4c77-b235-1c1b66e56f4e}</Project>
+        <Name>nulltovisconverter</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\..\..\resources\converters\stringsolidbrushconverter\stringsolidbrushconverter.csproj">
+        <Project>{6e49ff72-a0c1-443b-8a1d-d1f0cdedb188}</Project>
+        <Name>stringsolidbrushconverter</Name>
+      </ProjectReference>
       <ProjectReference Include="..\..\..\resources\helpers\observingobjects\observingobjects.csproj">
         <Project>{ee9855bc-e997-4378-9bb2-7fb2056bf256}</Project>
         <Name>observingobjects</Name>

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using eventbased.DataModel;
+using applicationskeleton.DataModel;
 
-namespace eventbased.Services
+namespace applicationskeleton.Services
 {
     public class FriendsService : IFriendsService
     {
@@ -11,11 +11,11 @@ namespace eventbased.Services
             await Task.Delay(1000);
             return new List<Friend>()
             {
-                new Friend("John", "Collarado", "Blonde"),
-                new Friend("Sarah", "Parker", "Black"),
-                new Friend("Travis", "McConnelly", "Red"),
-                new Friend("Paul", "Sighton", "Black"),
-                new Friend("Carl", "Pilktington", "Red")
+                new Friend("John", "Collarado", new HairColor("Green")),
+                new Friend("Sarah", "Parker", new HairColor("Black")),
+                new Friend("Travis", "McConnelly", new HairColor("Red")),
+                new Friend("Paul", "Sighton", new HairColor("Black")),
+                new Friend("Carl", "Pilktington", new HairColor("Red"))
             };
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace eventbased
+﻿namespace applicationskeleton
 {
     /// <summary>
     /// Interaction logic for App.xaml

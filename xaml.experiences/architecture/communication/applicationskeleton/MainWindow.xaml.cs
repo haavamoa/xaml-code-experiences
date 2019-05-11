@@ -1,18 +1,18 @@
-﻿using eventbased.FriendsList;
-using eventbased.HairColorCounting;
-using eventbased.Services;
+﻿using applicationskeleton.FriendsList;
+using applicationskeleton.HairColorCounting;
+using applicationskeleton.Services;
 
-namespace eventbased
+namespace applicationskeleton
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    ///     Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow
     {
         public MainWindow()
         {
             InitializeComponent();
-            
+
             var mainViewModel = new MainViewModel(new FriendsViewModel(new FriendsService()), new HairCountingViewModel());
 
             DataContext = mainViewModel;

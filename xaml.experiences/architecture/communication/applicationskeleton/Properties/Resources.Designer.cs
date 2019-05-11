@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace eventbased.Properties
+namespace applicationskeleton.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.

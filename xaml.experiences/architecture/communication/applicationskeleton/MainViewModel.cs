@@ -1,9 +1,10 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
-using eventbased.FriendsList;
-using eventbased.HairColorCounting;
+using applicationskeleton.FriendsList;
+using applicationskeleton.HairColorCounting;
 
-namespace eventbased
+namespace applicationskeleton
 {
     public class MainViewModel
     {
@@ -22,6 +23,7 @@ namespace eventbased
             try
             {
                 await FriendsViewModel.Initialize();
+                HairCountingViewModel.EvaluateFriendsWithBlackHair(FriendsViewModel.Friends.ToList());
             }
             catch (Exception exception)
             {

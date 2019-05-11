@@ -1,12 +1,14 @@
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-using eventbased.FriendDetail;
+using applicationskeleton.FriendDetail;
 
-namespace eventbased.FriendsList
+namespace applicationskeleton.FriendsList
 {
     public interface IFriendsViewModel
     {
-        Task Initialize();
         ObservableCollection<FriendViewModel> Friends { get; }
+        FriendViewModel SelectedFriend { get; set; }
+        bool IsBusy { get; }
+        Task Initialize();
     }
 }

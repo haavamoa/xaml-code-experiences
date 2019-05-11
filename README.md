@@ -20,6 +20,7 @@ The idea is that I want to use this repository as a lookup when facing different
     * [Using `MarkupExtension`](xaml.experiences/resources/converters/markupextension)
     * [LogicalExpressionConverter](xaml.experiences/resources/converters/logicalexpressionconverter)
     * [NullToVisibilityConverter](xaml.experiences/resources/converters/nulltovisconverter)
+    * [StringToSolidBrushConverter](xaml.experiences/resources/converters/stringsolidbrushconverter)
 * Commands
     * [DelegateCommand](xaml.experiences/resources/commands/delegatecommand)
 * Helpers

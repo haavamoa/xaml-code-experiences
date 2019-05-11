@@ -1,9 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using eventbased.DataModel;
+using applicationskeleton.DataModel;
 
-namespace eventbased.Services
+namespace applicationskeleton.Services
 {
     public interface IFriendsService
     {

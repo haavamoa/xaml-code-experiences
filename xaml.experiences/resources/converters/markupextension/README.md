@@ -1,8 +1,8 @@
-# Using `MarkupExtensions` in a converter
+# Using `MarkupExtension` in a converter
 This approach will give you the opportunity to use your converter in a one-liner in Xaml.
 It will also make it possible to work with `properties` in your converter. 
 
-Example of a converter that is using ``MarkupExtensions`` : 
+Example of a converter that is using ``MarkupExtension`` : 
 ````c#
 public class BoolToVisibilityConverter : MarkupExtension, IValueConverter
     {
@@ -51,7 +51,7 @@ This converter is used in [MainWindow.xaml](MainWindow.xaml) in order for it to 
 Now, how can I reference this converter without having to add it as a  ```<Window.Resource>```([MainWindow, line 15-17](MainWindow.xaml)) with a 
 ``x:Key``. 
 
-The magic here is that the converter is inheriting from [``MarkupExtensions``](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/markup-extensions-and-wpf-xaml).
+The magic here is that the converter is inheriting from [``MarkupExtension``](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/markup-extensions-and-wpf-xaml).
 This class requires you to provide a value, which is the value that should be returned to the element that requires 
 the markup extension. In this case, [MainWindow.xaml](MainWindow.xaml) line 34.
 

@@ -1,8 +1,8 @@
-namespace eventbased.DataModel
+namespace applicationskeleton.DataModel
 {
     public class Friend
     {
-        public Friend(string firstName, string lastName, string hairColor)
+        public Friend(string firstName, string lastName, HairColor hairColor)
         {
             FirstName = firstName;
             LastName = lastName;
@@ -11,6 +11,6 @@ namespace eventbased.DataModel
 
         public string FirstName { get; }
         public string LastName { get; }
-        public string HairColor { get; set; }
+        public HairColor HairColor { get; set; }
     }
 }
