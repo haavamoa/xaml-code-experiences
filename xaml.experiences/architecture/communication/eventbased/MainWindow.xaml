@@ -1,16 +1,16 @@
-﻿<Window x:Class="applicationskeleton.MainWindow"
+﻿<Window x:Class="eventbased.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:Applicationskeleton="clr-namespace:applicationskeleton"
         xmlns:Nulltovisconverter="clr-namespace:nulltovisconverter;assembly=nulltovisconverter"
+        xmlns:Eventbased="clr-namespace:eventbased"
         mc:Ignorable="d"
         Title="MainWindow"
         Width="1024"
         Height="768"
         WindowStartupLocation="CenterScreen"
-        d:DataContext="{d:DesignInstance Applicationskeleton:MainViewModel}" >
+        d:DataContext="{d:DesignInstance Eventbased:MainViewModel}" >
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -43,7 +43,7 @@
                 BorderBrush="{StaticResource BorderBrush}"
                 BorderThickness="2" >
             <ContentControl Content="{Binding HairCountingViewModel}"
-                            ContentTemplate="{StaticResource HairCountingDataTemplate}" />
+                              ContentTemplate="{StaticResource HairCountingDataTemplate}" />
         </Border>
         <!-- Friends Master View -->
         <Border Grid.Row="1"
@@ -52,7 +52,7 @@
                 BorderBrush="{StaticResource BorderBrush}"
                 BorderThickness="2,0,2,2" >
             <ContentControl Content="{Binding FriendsViewModel}"
-                            ContentTemplate="{StaticResource FriendsListDataTemplate}" />
+                              ContentTemplate="{StaticResource FriendsListDataTemplate}" />
 
         </Border>
         <!-- Friend Detail View -->
@@ -64,7 +64,7 @@
             <ContentControl Content="{Binding FriendsViewModel.SelectedFriend}"
                             Visibility="{Binding FriendsViewModel.SelectedFriend, 
                             Converter={Nulltovisconverter:NullToVisibilityConverter Inverted=True}}"
-                            ContentTemplate="{StaticResource FriendDetailViewDataTemplate}" />
+                              ContentTemplate="{StaticResource FriendDetailViewDataTemplate}" />
         </Border>
     </Grid>
 </Window>

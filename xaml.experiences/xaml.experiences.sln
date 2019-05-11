@@ -50,6 +50,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "applicationskeleton", "arch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stringsolidbrushconverter", "resources\converters\stringsolidbrushconverter\stringsolidbrushconverter.csproj", "{6E49FF72-A0C1-443B-8A1D-D1F0CDEDB188}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eventbased", "architecture\communication\eventbased\eventbased.csproj", "{86FA08AE-128A-4B1E-8C58-8062A4B17A36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,7 @@ Global
 		{C8555E7B-31FC-4D0E-AFB4-8DEC291357E2} = {F098F4E0-6CFA-4D9D-9118-AB2A8D75D46A}
 		{3E2F5724-4907-4327-8B2D-7EDC7FF7C214} = {C8555E7B-31FC-4D0E-AFB4-8DEC291357E2}
 		{6E49FF72-A0C1-443B-8A1D-D1F0CDEDB188} = {89CB05DD-B5F6-4364-B067-A415DFA13998}
+		{86FA08AE-128A-4B1E-8C58-8062A4B17A36} = {C8555E7B-31FC-4D0E-AFB4-8DEC291357E2}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E0FE406B-F9AF-4386-9643-58E563F52196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -119,5 +122,9 @@ Global
 		{6E49FF72-A0C1-443B-8A1D-D1F0CDEDB188}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E49FF72-A0C1-443B-8A1D-D1F0CDEDB188}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E49FF72-A0C1-443B-8A1D-D1F0CDEDB188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86FA08AE-128A-4B1E-8C58-8062A4B17A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86FA08AE-128A-4B1E-8C58-8062A4B17A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86FA08AE-128A-4B1E-8C58-8062A4B17A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86FA08AE-128A-4B1E-8C58-8062A4B17A36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
