@@ -42,8 +42,8 @@
                 Padding="5"
                 BorderBrush="{StaticResource BorderBrush}"
                 BorderThickness="2" >
-            <ContentPresenter Content="{Binding HairCountingViewModel}"
-                              ContentTemplate="{StaticResource HairCountingDataTemplate}" />
+            <ContentControl Content="{Binding HairCountingViewModel}"
+                            ContentTemplate="{StaticResource HairCountingDataTemplate}" />
         </Border>
         <!-- Friends Master View -->
         <Border Grid.Row="1"
@@ -51,8 +51,8 @@
                 Padding="5"
                 BorderBrush="{StaticResource BorderBrush}"
                 BorderThickness="2,0,2,2" >
-            <ContentPresenter Content="{Binding FriendsViewModel}"
-                              ContentTemplate="{StaticResource FriendsListDataTemplate}" />
+            <ContentControl Content="{Binding FriendsViewModel}"
+                            ContentTemplate="{StaticResource FriendsListDataTemplate}" />
 
         </Border>
         <!-- Friend Detail View -->
@@ -61,8 +61,10 @@
                 Padding="5"
                 BorderBrush="{StaticResource BorderBrush}"
                 BorderThickness="0,0,2,2" >
-            <ContentPresenter Content="{Binding FriendsViewModel.SelectedFriend}"
-                              ContentTemplate="{StaticResource FriendDetailViewDataTemplate}" />
+            <ContentControl Content="{Binding FriendsViewModel.SelectedFriend}"
+                            Visibility="{Binding FriendsViewModel.SelectedFriend, 
+                            Converter={Nulltovisconverter:NullToVisibilityConverter Inverted=True}}"
+                            ContentTemplate="{StaticResource FriendDetailViewDataTemplate}" />
         </Border>
     </Grid>
 </Window>
