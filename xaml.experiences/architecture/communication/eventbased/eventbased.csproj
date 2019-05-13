@@ -115,9 +115,6 @@
       </ProjectReference>
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Events" />
-    </ItemGroup>
-    <ItemGroup>
       <Content Include="Readme.md" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
