@@ -62,6 +62,7 @@
         <Compile Include="FriendsList\IFriendsViewModel.cs" />
         <Compile Include="HairColorCounting\HairCountingViewModel.cs" />
         <Compile Include="HairColorCounting\IHairCountingViewModel.cs" />
+        <Compile Include="IHandleFriendChanged.cs" />
         <Compile Include="Services\FriendsService.cs" />
         <Compile Include="Services\IFriendsService.cs" />
     </ItemGroup>
@@ -113,6 +114,9 @@
         <Project>{ee9855bc-e997-4378-9bb2-7fb2056bf256}</Project>
         <Name>observingobjects</Name>
       </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Readme.md" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

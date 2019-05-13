@@ -6,7 +6,7 @@ using interfacebased.HairColorCounting;
 
 namespace interfacebased
 {
-    public class MainViewModel
+    public class MainViewModel : IHandleFriendChanged
     {
         public MainViewModel(IFriendsViewModel friendsViewModel, IHairCountingViewModel hairCountingViewModel)
         {
@@ -18,17 +18,24 @@ namespace interfacebased
 
         public IHairCountingViewModel HairCountingViewModel { get; }
 
+        public void OnFriendChanged() => ReevaluateHairCount();
+
         public async Task Initialize()
         {
             try
             {
-                await FriendsViewModel.Initialize();
-                HairCountingViewModel.EvaluateFriendsWithBlackHair(FriendsViewModel.Friends.ToList());
+                await FriendsViewModel.Initialize(this);
+                ReevaluateHairCount();
             }
             catch (Exception exception)
             {
                 //Log it, fix it or show it
             }
+        }
+
+        private void ReevaluateHairCount()
+        {
+            HairCountingViewModel.EvaluateFriendsWithBlackHair(FriendsViewModel.Friends.ToList());
         }
     }
 }

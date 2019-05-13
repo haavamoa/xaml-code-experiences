@@ -9,6 +9,6 @@ namespace interfacebased.FriendsList
         ObservableCollection<FriendViewModel> Friends { get; }
         FriendViewModel SelectedFriend { get; set; }
         bool IsBusy { get; }
-        Task Initialize();
+        Task Initialize(IHandleFriendChanged friendChangedHandler);
     }
 }

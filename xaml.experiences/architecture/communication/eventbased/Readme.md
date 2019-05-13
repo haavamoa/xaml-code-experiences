@@ -13,6 +13,8 @@ and [``IHairColorCountingViewModel``](HairColorCounting/IHairCountingViewModel.c
 has to tell ``MainViewModel`` that its hair color has changed, that way it can tell ``HairColorCountingViewModel`` to
  reevaluate.
  
+ ``FriendViewModel`` should have an event that ``MainViewModel`` can assign code that can reevaluate hair color.
+ 
 ## How did I implement it?
 For each ``FriendViewModel`` I have added a [``HairColorChangedEvent``](FriendDetail/IFriendViewModel.cs). The event 
 gets invoked in the ``HairColor`` setter (that will run each time the user chooses a hair color).
@@ -31,3 +33,4 @@ this can be hard to remember when working with a large project.
 One of the reasons why I really do not like event is that you get no ``references`` from code vision. This means it 
 can be hard to follow the flow of events. One would need to search for the event in all of its code base in order to 
 understand what gets called when.
+Sending arguments also needs some additional work

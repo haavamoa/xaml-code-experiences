@@ -20,7 +20,7 @@ namespace interfacebased.FriendsList
             Friends = new ObservableCollection<FriendViewModel>();
         }
 
-        public async Task Initialize()
+        public async Task Initialize(IHandleFriendChanged friendChangedHandler)
         {
             try
             {
@@ -28,7 +28,7 @@ namespace interfacebased.FriendsList
                 var friendsFetched = await m_friendsService.Get();
                 foreach (var friend in friendsFetched)
                 {
-                    Friends.Add(new FriendViewModel(friend));
+                    Friends.Add(new FriendViewModel(friend, friendChangedHandler));
                 }
             }
             catch (Exception exception)
