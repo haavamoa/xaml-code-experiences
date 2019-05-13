@@ -44,6 +44,7 @@ The idea is that I want to use this repository as a lookup when facing different
 * [xaml-coding-guidelines](https://github.com/cmaneu/xaml-coding-guidelines) 
 * [WPF Productivity Playbook](https://www.pluralsight.com/courses/wpf-productivity-playbook) 
 * [DataBinding Memory Leaks](https://onewindowsdev.com/2016/09/22/a-memory-leak-may-occur-when-you-use-data-binding-in-windows-presentation-foundation/) 
+* [XamlBehaviorsWpf](https://github.com/microsoft/XamlBehaviorsWpf) 
 
 ## Contributions
 
