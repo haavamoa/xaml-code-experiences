@@ -1,4 +1,4 @@
-#Interface based communication
+# Interface based communication
 The name of this way of communicating is in lack of a better name. The idea with this kind of architecture is to pass
  an ``interfaces`` around, and to invoke methods or whatever is suitable in the appropriate places. This is one of the 
  methods that I have been using more and more lately.
