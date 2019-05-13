@@ -1,8 +1,8 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:FriendDetail="clr-namespace:applicationskeleton.FriendDetail"
-                    xmlns:DataModel="clr-namespace:applicationskeleton.DataModel"
-                    xmlns:Colortobrushconverter="clr-namespace:stringtobrushconverter;assembly=stringsolidbrushconverter" >
+                    xmlns:Colortobrushconverter="clr-namespace:stringtobrushconverter;assembly=stringsolidbrushconverter"
+                    xmlns:FriendDetail="clr-namespace:interfacebased.FriendDetail"
+                    xmlns:DataModel="clr-namespace:interfacebased.DataModel" >
     <DataTemplate x:Key="FriendDetailViewDataTemplate"
                   DataType="{x:Type FriendDetail:IFriendViewModel}" >
         <Grid>

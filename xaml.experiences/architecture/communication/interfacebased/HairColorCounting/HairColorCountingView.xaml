@@ -1,0 +1,8 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:HairColorCounting="clr-namespace:interfacebased.HairColorCounting" >
+    <DataTemplate x:Key="HairCountingDataTemplate"
+                  DataType="{x:Type HairColorCounting:IHairCountingViewModel}">
+        <TextBlock Text="{Binding NumberOfBlackHair, StringFormat={}Friends with black hair: {0}}" />
+    </DataTemplate>
+</ResourceDictionary>

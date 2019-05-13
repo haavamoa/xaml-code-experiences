@@ -3,7 +3,7 @@
                     xmlns:FriendsList="clr-namespace:applicationskeleton.FriendsList"
                     xmlns:ViewModels="clr-namespace:applicationskeleton.FriendDetail"
                     xmlns:Converters="clr-namespace:markupextension.Resources.Converters;assembly=markupextension"
-                    xmlns:Colortobrushconverter="clr-namespace:colortobrushconverter;assembly=stringsolidbrushconverter" >
+                    xmlns:Colortobrushconverter="clr-namespace:stringtobrushconverter;assembly=stringsolidbrushconverter" >
     <DataTemplate x:Key="FriendsListDataTemplate"
                   DataType="{x:Type FriendsList:IFriendsViewModel}" >
 

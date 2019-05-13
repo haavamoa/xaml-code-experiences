@@ -4,7 +4,7 @@ using System.Windows.Data;
 using System.Windows.Markup;
 using System.Windows.Media;
 
-namespace colortobrushconverter
+namespace stringtobrushconverter
 {
     public class StringToSolidBrushConverter : MarkupExtension, IValueConverter
     {

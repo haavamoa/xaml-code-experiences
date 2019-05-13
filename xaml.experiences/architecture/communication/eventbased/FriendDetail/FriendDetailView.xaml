@@ -1,6 +1,6 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:Colortobrushconverter="clr-namespace:colortobrushconverter;assembly=stringsolidbrushconverter"
+                    xmlns:Colortobrushconverter="clr-namespace:stringtobrushconverter;assembly=stringsolidbrushconverter"
                     xmlns:FriendDetail="clr-namespace:eventbased.FriendDetail"
                     xmlns:DataModel="clr-namespace:eventbased.DataModel" >
     <DataTemplate x:Key="FriendDetailViewDataTemplate"

@@ -2,8 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:Converters="clr-namespace:markupextension.Resources.Converters;assembly=markupextension"
                     xmlns:Colortobrushconverter="clr-namespace:stringtobrushconverter;assembly=stringsolidbrushconverter"
-                    xmlns:FriendsList="clr-namespace:eventbased.FriendsList"
-                    xmlns:ViewModels="clr-namespace:eventbased.FriendDetail" >
+                    xmlns:FriendsList="clr-namespace:interfacebased.FriendsList"
+                    xmlns:ViewModels="clr-namespace:interfacebased.FriendDetail" >
     <DataTemplate x:Key="FriendsListDataTemplate"
                   DataType="{x:Type FriendsList:IFriendsViewModel}" >
 
