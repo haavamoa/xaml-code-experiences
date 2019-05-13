@@ -42,7 +42,7 @@ namespace eventbased
         {
             foreach (var friendViewModel in FriendsViewModel.Friends)
             {
-                friendViewModel.FriendChangedEvent += (a,e) =>  EvaluateHairColorCount();
+                friendViewModel.HairColorChangedEvent += (a,e) =>  EvaluateHairColorCount();
             }
         }
 
@@ -50,7 +50,7 @@ namespace eventbased
         {
             foreach (var friendViewModel in FriendsViewModel.Friends)
             {
-                friendViewModel.FriendChangedEvent -= (a,e) => EvaluateHairColorCount();
+                friendViewModel.HairColorChangedEvent -= (a,e) => EvaluateHairColorCount();
             }
         }
     }

@@ -25,7 +25,7 @@ namespace eventbased.FriendDetail
             };
         }
 
-        public event EventHandler FriendChangedEvent;
+        public event EventHandler HairColorChangedEvent;
 
         public string FirstName => m_friend.FirstName;
         public ObservableCollection<HairColor> AvailableColors { get; }
@@ -39,7 +39,7 @@ namespace eventbased.FriendDetail
             {
                 m_friend.HairColor = value;
                 OnPropertyChanged();
-                FriendChangedEvent?.Invoke(this, null);
+                HairColorChangedEvent?.Invoke(this, null);
             }
         }
     }

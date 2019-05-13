@@ -10,6 +10,6 @@ namespace eventbased.FriendDetail
         string LastName { get; }
         string FirstName { get; }
         ObservableCollection<HairColor> AvailableColors { get; }
-        event EventHandler FriendChangedEvent;
+        event EventHandler HairColorChangedEvent;
     }
 }
