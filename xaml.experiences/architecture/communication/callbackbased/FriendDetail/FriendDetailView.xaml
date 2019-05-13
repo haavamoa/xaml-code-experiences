@@ -1,0 +1,58 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Colortobrushconverter="clr-namespace:stringtobrushconverter;assembly=stringsolidbrushconverter"
+                    xmlns:FriendDetail="clr-namespace:callbackbased.FriendDetail"
+                    xmlns:DataModel="clr-namespace:callbackbased.DataModel" >
+    <DataTemplate x:Key="FriendDetailViewDataTemplate"
+                  DataType="{x:Type FriendDetail:IFriendViewModel}" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"
+                                  MinWidth="100" />
+                <ColumnDefinition Width="Auto"
+                                  MinWidth="100" />
+            </Grid.ColumnDefinitions>
+            <!-- First name -->
+            <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       Text="First name : " />
+            <TextBlock Grid.Row="0"
+                       Grid.Column="1"
+                       Text="{Binding FirstName}" />
+            <!-- Last name -->
+            <TextBlock Grid.Row="1"
+                       Grid.Column="0"
+                       Text="Last name : " />
+            <TextBlock Grid.Row="1"
+                       Grid.Column="1"
+                       Text="{Binding LastName}" />
+            <!-- Hair color -->
+            <TextBlock Grid.Row="2"
+                       Grid.Column="0"
+                       Text="Hair color : " />
+            <ComboBox Grid.Row="2"
+                      Grid.Column="1"
+                      SelectedItem="{Binding HairColor}"
+                      ItemsSource="{Binding AvailableColors}" >
+                <ComboBox.ItemTemplate>
+                    <DataTemplate DataType="{x:Type DataModel:HairColor}" >
+                        <StackPanel Orientation="Horizontal" >
+                            <Border Height="20"
+                                    Width="20"
+                                    BorderThickness="0"
+                                    Background="{Binding ColorName, Converter={Colortobrushconverter:StringToSolidBrushConverter}}"
+                                    CornerRadius="4" />
+                            <TextBlock Text="{Binding ColorName}"
+                                       Margin="5,0,0,0" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>

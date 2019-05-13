@@ -18,6 +18,7 @@ The idea is that I want to use this repository as a lookup when facing different
   * Examples
     * [Event based](xaml.experiences/architecture/communication/eventbased)
     * [Interface based](xaml.experiences/architecture/communication/interfacebased)
+    * [Callback based](xaml.experiences/architecture/communication/callbackbased)
 
 ### Resources :hammer:
 * Converters

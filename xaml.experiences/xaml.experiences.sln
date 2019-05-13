@@ -54,6 +54,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eventbased", "architecture\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interfacebased", "architecture\communication\interfacebased\interfacebased.csproj", "{FB056CAE-6ECC-438C-8B74-B4078036801C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "callbackbased", "architecture\communication\callbackbased\callbackbased.csproj", "{AEEEC2A1-3694-4282-9DEF-030CEEB7F0AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,7 @@ Global
 		{6E49FF72-A0C1-443B-8A1D-D1F0CDEDB188} = {89CB05DD-B5F6-4364-B067-A415DFA13998}
 		{86FA08AE-128A-4B1E-8C58-8062A4B17A36} = {C8555E7B-31FC-4D0E-AFB4-8DEC291357E2}
 		{FB056CAE-6ECC-438C-8B74-B4078036801C} = {C8555E7B-31FC-4D0E-AFB4-8DEC291357E2}
+		{AEEEC2A1-3694-4282-9DEF-030CEEB7F0AB} = {C8555E7B-31FC-4D0E-AFB4-8DEC291357E2}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E0FE406B-F9AF-4386-9643-58E563F52196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -133,5 +136,9 @@ Global
 		{FB056CAE-6ECC-438C-8B74-B4078036801C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB056CAE-6ECC-438C-8B74-B4078036801C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB056CAE-6ECC-438C-8B74-B4078036801C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEEEC2A1-3694-4282-9DEF-030CEEB7F0AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEEEC2A1-3694-4282-9DEF-030CEEB7F0AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEEEC2A1-3694-4282-9DEF-030CEEB7F0AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEEEC2A1-3694-4282-9DEF-030CEEB7F0AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
