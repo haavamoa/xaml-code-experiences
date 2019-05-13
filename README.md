@@ -14,6 +14,9 @@ The idea is that I want to use this repository as a lookup when facing different
 * Design Patterns
     * [Dependency Injection](xaml.experiences/architecture/designpatterns/dependencyinjection)
 * [Communication](xaml.experiences/architecture/communication)
+  * [Skeleton project for each example](xaml.experiences/architecture/communication/applicationskeleton)
+  * Examples
+    * [Event based](xaml.experiences/architecture/communication/eventbased)
 
 ### Resources :hammer:
 * Converters
