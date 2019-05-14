@@ -28,6 +28,7 @@ The idea is that I want to use this repository as a lookup when facing different
     * [StringToSolidBrushConverter](xaml.experiences/resources/converters/stringsolidbrushconverter)
 * Commands
     * [DelegateCommand](xaml.experiences/resources/commands/delegatecommand)
+    * [AsyncCommand](xaml.experiences/resources/commands/asynccommand)
 * Helpers
     * [Observing objects](xaml.experiences/resources/helpers/observingobjects)
 

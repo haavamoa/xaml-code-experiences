@@ -1,0 +1,40 @@
+﻿<Window x:Class="asynccommand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:asynccommand"
+        xmlns:Converters="clr-namespace:markupextension.Resources.Converters;assembly=markupextension"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="350"
+        Width="525"
+        d:DataContext="{d:DesignInstance local:MainViewModel}" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!-- The button that runs the AsyncCommand -->
+        <Button Grid.Row="0"
+                Command="{Binding ChangeTextAsyncCommand}"
+                CommandParameter="Finished loading."
+                Visibility="{Binding ElementName=progressBar, Path=IsVisible, 
+                      Converter={Converters:BoolToVisibilityConverter Inverted=True}}"
+                Height="20"
+                Width="100"
+                Content="Click it"
+                HorizontalAlignment="Center" />
+        <!-- The progressbar that will be visible while the task is running -->
+        <ProgressBar Grid.Row="0"
+                     x:Name="progressBar"
+                     Height="20"
+                     Width="100"
+                     IsIndeterminate="True"
+                     Visibility="{Binding IsBusy, Converter={Converters:BoolToVisibilityConverter}}" />
+        <!-- The textblock that gets updated after the task is finished -->
+        <TextBlock Grid.Row="1"
+                   Text="{Binding Text}"
+                   HorizontalAlignment="Center" />
+    </Grid>
+</Window>
