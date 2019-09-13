@@ -1,6 +1,6 @@
 # Using Events to communicate
 Events is a publisher-subscriber way of communicating. 
-One view model has a event that another view model can subscribe to. When the first view model invoke the event, 
+One view model has an event that another view model can subscribe to. When the first view model invoke the event, 
 the second view model will run its code.
 
 > Note: When dealing with events, one should always unsubscribe to the events. [Failing to do so can lead to memory 
@@ -31,6 +31,6 @@ Using events is a fairly straight forward way of implementing communication. Dis
 this can be hard to remember when working with a large project.
 
 One of the reasons why I really do not like event is that you get no ``references`` from code vision. This means it 
-can be hard to follow the flow of events. One would need to search for the event in all of its code base in order to 
+can be hard to follow the flow of events. One would need to search for the event in the entire code base in order to 
 understand what gets called when.
-Sending arguments also needs some additional work
+Sending arguments also needs some additional work.
