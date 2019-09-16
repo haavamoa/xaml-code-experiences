@@ -1,5 +1,5 @@
 # Callback based communication
-This way of communicating is very similar to [interface based](../interfacebased). Instead of passing a interface, it
+This way of communicating is very similar to [interface based](../interfacebased). Instead of passing an interface, it
  will pass ``Action``s. The ``Actions`` can then be invoked in the appropriate places
  
  ### The idea
@@ -12,7 +12,7 @@ This way of communicating is very similar to [interface based](../interfacebased
   ``MainViewModel`` should pass an ``Action`` to ``FriendsViewModel``, which then passes that ``Action`` for each 
   ``FriendViewModel``. The ``FriendViewModel`` should invoke the action when changing it's hair color.
   
-  ### How did I implemented it?
+  ### How did I implement it?
   
   Expanded the ``constructor`` of ``FriendViewModel`` with ``Action OnFriendChanged``. Saves the action in a backing 
     field (``m_onFriendChanged``).
@@ -30,4 +30,4 @@ This way of communicating is very similar to [interface based](../interfacebased
   projects with not that much communication. But this can be troublesome when dealing with loads of communication.
   I believe that having ``interface``s that can be expanded is better than having to send many actions back and forth.
   It is also not strongly typed, so you could be facing bugs where you send the wrong action down the line. This can 
-  be fixed with using an ``Action<MyArgumentClass``, that way you are strongly typed.
+  be fixed with using an ``Action<MyArgumentClass>``, that way you are strongly typed.

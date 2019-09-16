@@ -1,5 +1,5 @@
 # Communication is **key**
-One of the most common use cases while working with an client that has many parts, is agreeing on how they should 
+One of the most common use cases while working with a client that has many parts, is agreeing on how they should 
 communicate between each other. This might be an easy task when you are working alone, but very important when 
 working with others.
 
