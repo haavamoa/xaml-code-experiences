@@ -1,5 +1,5 @@
 # xaml-code-experiences
-A collection of the experiences I have collected during my days of Wpf, while following the MVVM design pattern.
+A collection of the experiences I have collected during my days of Xamarin and Wpf, while following the MVVM design pattern.
 
 The idea is that I want to use this repository as a lookup when facing different scenarios while developing a Xaml based application. I would also like to share it with the world! :earth_americas:
 
