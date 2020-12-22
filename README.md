@@ -31,6 +31,7 @@ The idea is that I want to use this repository as a lookup when facing different
     * [AsyncCommand](xaml.experiences/resources/commands/asynccommand)
 * Helpers
     * [Observing objects](xaml.experiences/resources/helpers/observingobjects)
+    * [Animations](xaml.experiences/resources/helpers/animations)
 
 ### Refactoring :wrench:
 > Coming...
