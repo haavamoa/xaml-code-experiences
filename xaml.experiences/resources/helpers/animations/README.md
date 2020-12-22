@@ -1,5 +1,5 @@
 # Animations
-When working with WPF and animations you quickly realize that animations does not work the same way as they do in `Xamarin.Forms`. In `Xamarin.Forms` you can easily use animations in the code behind by calling extension methods for any view, and the whats better is that these are awaitable. This means that you can queue up animations that wait for each other quiet easily. 
+When working with WPF and animations you quickly realize that animations does not work the same way as they do in `Xamarin.Forms`. In `Xamarin.Forms` you can easily use animations in the code behind by calling extension methods for any view, and whats nice is that these animations are awaitable. This means that you can queue up animations that wait for eachother quite easily. 
 
 In WPF you have to work with [Storyboards](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/storyboards-overview?view=netframeworkdesktop-4.8) and the [Animation](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/graphics-multimedia/animation-overview?view=netframeworkdesktop-4.8) class. These can be a bit overwhelming and I find it quiet useful to try to move towards the same approach as `Xamarin.Forms` for simplicity.
 
