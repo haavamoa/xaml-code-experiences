@@ -52,56 +52,6 @@ namespace myNameSpace
             return tsc.Task;
         }
 
-        public static Task TranslateToY(this FrameworkElement frameworkElement, double y, long length = 250, IEasingFunction? easingFunction = null)
-        {
-            var tsc = new TaskCompletionSource<bool>();
-            var transform = new TranslateTransform(0, 0);
-            frameworkElement.RenderTransform = transform;
-
-            var doubleAnimation = new DoubleAnimation() { To = y, Duration = TimeSpan.FromMilliseconds(length) };
-            doubleAnimation.EasingFunction = easingFunction;
-
-            var sb = new Storyboard();
-            sb.Children.Add(doubleAnimation);
-
-            Storyboard.SetTarget(sb, frameworkElement);
-            Storyboard.SetTargetProperty(sb, new PropertyPath("RenderTransform.(TranslateTransform.Y)"));
-
-            sb.Begin();
-            sb.Completed += (s, e) =>
-            {
-                tsc.SetResult(true);
-            };
-            sb.Begin();
-
-            return tsc.Task;
-        }
-
-        public static Task TranslateToX(this FrameworkElement frameworkElement, double x, long length = 250, IEasingFunction? easingFunction = null)
-        {
-            var tsc = new TaskCompletionSource<bool>();
-            var transform = new TranslateTransform(0, 0);
-            frameworkElement.RenderTransform = transform;
-
-            var doubleAnimation = new DoubleAnimation() { To = x, Duration = TimeSpan.FromMilliseconds(length) };
-            doubleAnimation.EasingFunction = easingFunction;
-
-            var sb = new Storyboard();
-            sb.Children.Add(doubleAnimation);
-
-            Storyboard.SetTarget(sb, frameworkElement);
-            Storyboard.SetTargetProperty(sb, new PropertyPath("RenderTransform.(TranslateTransform.X)"));
-
-            sb.Begin();
-            sb.Completed += (s, e) =>
-            {
-                tsc.SetResult(true);
-            };
-            sb.Begin();
-
-            return tsc.Task;
-        }
-
         public static Task TranslateTo(this FrameworkElement frameworkElement, double y, double x, long length = 250, IEasingFunction? easingFunction = null)
         {
             var tsc = new TaskCompletionSource<bool>();
