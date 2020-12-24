@@ -3,7 +3,7 @@ A collection of the experiences I have collected during my days of Xamarin and W
 
 The idea is that I want to use this repository as a lookup when facing different scenarios while developing a Xaml based application. I would also like to share it with the world! :earth_americas:
 
-> Note: This is mainly written for Wpf, but the principles can be used while developing a mobile application (with Xamarin) as well.
+> Note: This is mainly written for Wpf, but the principles can be used while developing with Xamarin.Forms as well.
 
 ## Categories
 
