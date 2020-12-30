@@ -26,7 +26,7 @@ public partial class MainWindow
  
 ```
 
-[``Initialize``](ViewModels/MainViewModel.cs) will do mark the view model as busy before it goes to a service and fetches friends 
+[``Initialize``](ViewModels/MainViewModel.cs) will mark the view model as busy before it goes to a service and fetches friends 
 (this service could be a REST service that would take some time). When fetching is completed it will mark the view model as non busy.
 ```c#
 public async Task Initialize()
